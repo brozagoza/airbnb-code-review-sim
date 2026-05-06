@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+
+/* Diff line backgrounds */
+.diff-added    { background-color: #e6ffed; }
+.diff-removed  { background-color: #ffeef0; }
+.diff-context  { background-color: #ffffff; }
+.diff-hunk     { background-color: #f1f8ff; color: #586069; }
+
+.diff-added:hover,
+.diff-removed:hover,
+.diff-context:hover { background-color: #f0f7ff; cursor: pointer; }
+
+/* Inline comment thread */
+.comment-thread { border-left: 3px solid #fbbf24; background: #fffbeb; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 3px; }
+
+/* Syntax highlight inside diff - keep transparent bg */
+.diff-code pre { background: transparent !important; margin: 0 !important; padding: 0 !important; }
+.diff-code code { background: transparent !important; font-size: 12.5px !important; line-height: 20px !important; }
